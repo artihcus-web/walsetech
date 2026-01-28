@@ -21,7 +21,7 @@ const headerStyles = {
     gap: '0.75rem',
   },
   logo: {
-    height: '56px',
+    height: '70px',
     width: 'auto',
   },
   titleBlock: {
@@ -75,9 +75,9 @@ function Header() {
   return (
     <header style={headerStyles.container}>
       <div style={headerStyles.brand}>
-        <img src={logo} alt="WALSE.tech logo" style={headerStyles.logo} />
+        <img src={logo} alt="WALSE Tech logo" style={headerStyles.logo} />
         <div style={headerStyles.titleBlock}>
-          <span style={headerStyles.title}>WALSE.tech</span>
+          <span style={headerStyles.title}>WALSE Tech</span>
           <span style={headerStyles.subtitle}>SAP Supply Chain Consulting</span>
         </div>
       </div>

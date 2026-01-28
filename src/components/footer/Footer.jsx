@@ -27,7 +27,7 @@ function Footer() {
   return (
     <footer style={footerStyles.container}>
       <div style={footerStyles.left}>
-        © {year} WALSE.tech &nbsp;|&nbsp; SAP Supply Chain Consulting
+        © {year} WALSE Tech
       </div>
       <div style={footerStyles.right}>
         <span>Delivering reliable SAP SEM solutions</span>

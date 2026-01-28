@@ -133,7 +133,7 @@ function Home() {
             business moving.
           </h1>
           <p style={homeStyles.heroText}>
-            WALSE.tech helps organizations design, implement and optimize SAP
+            WALSE Tech helps organizations design, implement and optimize SAP
             Supply Chain Management (SCM) solutions so that planning,
             forecasting and logistics run as one connected flow. From demand and
             inventory planning to performance management, we transform your SAP
@@ -182,7 +182,7 @@ function Home() {
       </section>
 
       <section>
-        <h2 style={homeStyles.sectionHeading}>How WALSE.tech supports SAP Supply Chain Management</h2>
+        <h2 style={homeStyles.sectionHeading}>How WALSE Tech supports SAP Supply Chain Management</h2>
         <div style={homeStyles.section}>
           <div style={homeStyles.card}>
             <h3 style={homeStyles.cardTitle}>SAP SCM Roadmapping</h3>

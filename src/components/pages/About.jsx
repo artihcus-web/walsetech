@@ -37,9 +37,9 @@ const aboutStyles = {
 function About() {
   return (
     <main style={aboutStyles.page}>
-      <h1 style={aboutStyles.heading}>About WALSE.tech</h1>
+      <h1 style={aboutStyles.heading}>About WALSE Tech</h1>
       <p style={aboutStyles.text}>
-        WALSE.tech is a consulting partner focused exclusively on SAP Supply
+        WALSE Tech is a consulting partner focused exclusively on SAP Supply
         Chain Management, including SAP Strategic Enterprise Management (SEM).
         We combine deep process knowledge with hands‑on SAP delivery to help
         organizations build supply chains that are responsive, transparent and

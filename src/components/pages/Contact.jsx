@@ -91,7 +91,7 @@ function Contact() {
       <h1 style={contactStyles.heading}>Contact Us</h1>
       <p style={contactStyles.text}>
         Share your SAP supply chain and SEM challenges with us and we&apos;ll
-        outline how WALSE.tech can help. Send a message and our team will come
+        outline how WALSE Tech can help. Send a message and our team will come
         back to you with next steps and potential workshop dates.
       </p>
 
