@@ -2,90 +2,29 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from '../../assets/log.png'
 
-const headerStyles = {
-  container: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: '0.6rem 2rem',
-    backgroundColor: 'rgba(255, 255, 255, 0.4)',
-    color: '#111827',
-    boxShadow: '0 1px 6px rgba(15, 23, 42, 0.05)',
-    backdropFilter: 'blur(12px)',
-    WebkitBackdropFilter: 'blur(12px)',
-    position: 'sticky',
-    top: 0,
-    zIndex: 1000,
-  },
-  brand: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '0.75rem',
-  },
-  logo: {
-    height: '70px',
-    width: 'auto',
-  },
-  titleBlock: {
-    display: 'flex',
-    flexDirection: 'column',
-    lineHeight: 1.2,
-  },
-  title: {
-    fontSize: '1.4rem',
-    fontWeight: 700,
-    letterSpacing: '0.04em',
-  },
-  subtitle: {
-    fontSize: '0.8rem',
-    opacity: 0.8,
-  },
-  nav: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '1.5rem',
-    fontSize: '0.95rem',
-  },
-  linkBase: {
-    textDecoration: 'none',
-    color: '#111827',
-    fontWeight: 500,
-    paddingBottom: '0.15rem',
-    borderBottom: '2px solid transparent',
-    transition: 'color 0.2s ease, border-color 0.2s ease',
-  },
-  linkActive: {
-    color: '#145ea8',
-    borderBottomColor: '#145ea8',
-  },
-}
-
 function Header() {
-  const renderLink = (to, label) => (
-    <NavLink
-      key={to}
-      to={to}
-      style={({ isActive }) => ({
-        ...headerStyles.linkBase,
-        ...(isActive ? headerStyles.linkActive : null),
-      })}
-    >
-      {label}
-    </NavLink>
-  )
+  const linkClass = ({ isActive }) =>
+    `font-medium pb-0.5 border-b-2 transition-colors duration-200 ${
+      isActive
+        ? 'text-[#145ea8] border-[#145ea8]'
+        : 'text-[#111827] border-transparent hover:text-[#145ea8]'
+    }`
 
   return (
-    <header style={headerStyles.container}>
-      <div style={headerStyles.brand}>
-        <img src={logo} alt="WALSE Tech logo" style={headerStyles.logo} />
-        <div style={headerStyles.titleBlock}>
-         
-        </div>
+    <header className="h-16 flex items-center justify-between px-6 bg-white/40 text-[#111827] shadow-sm sticky top-0 z-[1000] backdrop-blur-[12px]">
+      <div className="flex items-center h-full">
+        <img src={logo} alt="WALSE Tech logo" className="h-40 w-auto object-contain" />
       </div>
-      <nav style={headerStyles.nav}>
-        {renderLink('/', 'Home')}
-        {renderLink('/about', 'About')}
-        {renderLink('/contact', 'Contact Us')}
+      <nav className="flex items-center gap-6 text-[0.95rem]">
+        <NavLink to="/" className={linkClass}>
+          Home
+        </NavLink>
+        <NavLink to="/about" className={linkClass}>
+          About
+        </NavLink>
+        <NavLink to="/contact" className={linkClass}>
+          Contact Us
+        </NavLink>
       </nav>
     </header>
   )

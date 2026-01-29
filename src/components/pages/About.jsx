@@ -1,70 +1,38 @@
 import React from 'react'
 
-const aboutStyles = {
-  page: {
-    minHeight: 'calc(100vh - 150px)',
-    padding: '2.5rem 2rem',
-    backgroundColor: '#ffffff',
-    color: '#0b2340',
-  },
-  heading: {
-    fontSize: '1.8rem',
-    fontWeight: 700,
-    marginBottom: '1.5rem',
-    color: '#145ea8',
-  },
-  sectionTitle: {
-    fontSize: '1.1rem',
-    fontWeight: 600,
-    marginTop: '1.5rem',
-    marginBottom: '0.5rem',
-  },
-  text: {
-    fontSize: '0.96rem',
-    lineHeight: 1.7,
-    maxWidth: '48rem',
-    color: '#4a5568',
-  },
-  list: {
-    marginTop: '0.75rem',
-    paddingLeft: '1.2rem',
-    fontSize: '0.95rem',
-    lineHeight: 1.6,
-    color: '#4a5568',
-  },
-}
-
 function About() {
   return (
-    <main style={aboutStyles.page}>
-      <h1 style={aboutStyles.heading}>About WALSE Tech</h1>
-      <p style={aboutStyles.text}>
-        WALSE Tech is a consulting partner focused exclusively on SAP Supply
-        Chain Management, including SAP Strategic Enterprise Management (SEM).
-        We combine deep process knowledge with hands‑on SAP delivery to help
-        organizations build supply chains that are responsive, transparent and
-        aligned with corporate strategy.
+    <main className="min-h-[calc(100vh-150px)] py-10 px-8 bg-white text-[#0b2340]">
+      <h1 className="text-[1.8rem] font-bold mb-6 text-[#145ea8]">About Us</h1>
+      <h2 className="text-[1.1rem] font-semibold mt-6 mb-2">
+        Welcome to WALSE Tech
+      </h2>
+      <p className="text-[0.96rem] leading-relaxed max-w-[48rem] text-[#4a5568]">
+        We are WALSE Tech, a global technology services company with a mission
+        to empower businesses with innovative solutions that drive growth and
+        success. Headquartered in Hyderabad, India, we have established
+        operations in the USA, Germany and Dubai to better serve our clients
+        worldwide.
       </p>
 
-      <h2 style={aboutStyles.sectionTitle}>Our focus areas</h2>
-      <ul style={aboutStyles.list}>
-        <li>Design and optimization of SAP SEM solutions for planning and KPIs.</li>
-        <li>Integration of SEM with SAP ERP and S/4HANA supply chain modules.</li>
-        <li>Blueprinting, implementation and roll‑out of end‑to‑end processes.</li>
-        <li>Continuous improvement programs and capability building for planners.</li>
-      </ul>
+      <h2 className="text-[1.1rem] font-semibold mt-6 mb-2">
+        We are WALSE Tech
+      </h2>
+      <p className="text-[0.96rem] leading-relaxed max-w-[48rem] text-[#4a5568]">
+        We pride ourselves on providing top-notch services, ranging from
+        software development and warehouse automation to IT consulting. Whatever
+        your needs may be, we have the expertise to turn your vision into
+        reality and help you stay ahead of the curve.
+      </p>
 
-      <h2 style={aboutStyles.sectionTitle}>How we work</h2>
-      <p style={aboutStyles.text}>
-        Every engagement starts with understanding your supply chain strategy
-        and pain points. From there we co‑create a roadmap, prioritize use cases
-        and deliver SAP SEM capabilities in short, value‑driven iterations. Our
-        consultants work closely with both IT and business teams to ensure your
-        SAP solutions are adopted, sustainable and ready to scale.
+      <p className="text-[0.96rem] leading-relaxed max-w-[48rem] text-[#4a5568] mt-4">
+        At WALSE Tech, we don&apos;t just aim to meet expectations – we strive to
+        exceed them. So, if you&apos;re looking for a trusted partner that is
+        committed to your success, look no further than WALSE Tech. We would be
+        honored to be your technology services provider of choice.
       </p>
     </main>
   )
 }
 
 export default About
-
