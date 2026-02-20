@@ -3,5 +3,22 @@
 @layer base {
   #root {
     @apply w-full min-w-0 p-0 font-sans text-[#0b2340];
+    cursor: none;
+  }
+
+  /* Professional: Hide cursor but keep standard behavior for accessibility */
+  a, button, [role="button"], input, textarea, select {
+    cursor: none !important;
+  }
+
+  /* Keep the cursor hidden even when clicking */
+  *:active {
+    cursor: none !important;
+  }
+}
+
+@layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
   }
 }
